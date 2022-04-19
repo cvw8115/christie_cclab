@@ -1,15 +1,40 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: lightcyan;
 }
+
 canvas {
   display: block;
+  margin-left: 250px;
 }
 
 .container {
-  margin-left: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
   padding: 50px;
-  border-color: black;
+  border-color: purple;
   border-style: solid;
-  border-width: 1px;
+  border-width: 50px;
+  background-color:blanchedalmond;
+}
+
+.title {
+  margin-left: 550px;
+  font-family: "Gill Sans", serif;
+  color: blue;
+  text-shadow: rgb(44, 67, 196) 1px 0 10px;
+}
+
+.text_left {
+  margin-left: 100px;
+  padding: 50px;
+  font-size: 20px;
+  color: red;
+}
+
+.text_right {
+  margin-left: 1500px;
+  font-size: 20px;
+  color: orange;
 }
