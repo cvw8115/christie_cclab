@@ -20,7 +20,7 @@ canvas {
 }
 
 .title {
-  margin-left: 550px;
+  text-align: center;
   font-family: "Gill Sans", serif;
   color: blue;
   text-shadow: rgb(44, 67, 196) 1px 0 10px;
