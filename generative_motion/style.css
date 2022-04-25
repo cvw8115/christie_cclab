@@ -6,12 +6,12 @@ html, body {
 
 canvas {
   display: block;
-  margin-left: 250px;
+  margin: auto;
 }
 
 .container {
-  margin-left: 300px;
-  margin-right: 300px;
+  margin: auto;
+  width: 540px;
   padding: 50px;
   border-color: purple;
   border-style: solid;
