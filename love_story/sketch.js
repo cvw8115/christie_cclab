@@ -4,8 +4,6 @@ let origRatio = imgOriginalHeight/imgOriginalWidth
 
 let scene = 1;
 
-let song1;
-
 function preload() {
   layer1img = loadImage("assets/layer1.png");
 
@@ -191,8 +189,6 @@ function preload() {
 
   layer137img = loadImage("assets/layer137.png");
   layer138img = loadImage("assets/layer138.png");
-
-  song1 = loadSound("assets/song1.mp3");
 }
 
 function setup() {
@@ -391,8 +387,6 @@ function draw() {
   background(220);
 
   if(scene == 1) {
-    song1.play();
-
     layer1.display();
   } else if(scene == 2) {
     layer2.display();
