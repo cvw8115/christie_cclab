@@ -396,12 +396,15 @@ function draw() {
     layer4.display();
 
     layer5.display();
+    layer5.xUpdate();
 
     layer6.display();
 
     layer7.display();
+    layer7.xUpdate();
 
     layer8.display();
+    layer8.xUpdate();
 
     layer9.display();
 
@@ -420,6 +423,7 @@ function draw() {
     layer16.display();
 
     layer17.display();
+    layer17.yUpdate();
 
     layer18.display();
 
@@ -444,16 +448,20 @@ function draw() {
     layer28.display();
   } else if(scene == 10) {
     layer29.display();
+    layer29.xUpdate();
 
     layer30.display();
 
     layer31.display();
+    layer31.xUpdate();
 
     layer32.display();
+    layer32.xUpdate();
   } else if(scene == 11) {
     layer33.display();
 
     layer34.display();
+    layer34.xUpdate();
 
     layer35.display();
 
@@ -462,20 +470,26 @@ function draw() {
     layer37.display();
   } else if(scene == 12) {
     layer38.display();
+    layer38.xUpdate();
 
     layer39.display();
 
     layer40.display();
+    layer40.xUpdate();
 
     layer41.display();
+    layer41.yUpdate();
 
     layer42.display();
 
     layer43.display();
+    layer43.xUpdate();
   } else if(scene == 13) {
     layer44.display();
+    layer44.xUpdate();
   } else if(scene == 14) {
     layer45.display();
+    layer45.yUpdate();
   } else if(scene == 15) {
     layer46.display();
 
@@ -484,6 +498,7 @@ function draw() {
     layer48.display();
 
     layer49.display();
+    layer49.xUpdate();
 
     layer50.display();
 
@@ -498,6 +513,7 @@ function draw() {
     layer55.display();
 
     layer56.display();
+    layer56.xUpdate();
 
     layer57.display();
 
@@ -518,10 +534,12 @@ function draw() {
     layer65.display();
 
     layer66.display();
+    layer66.xUpdate();
 
     layer67.display();
 
     layer68.display();
+    layer68.yUpdate();
   } else if(scene == 19) {
     layer69.display();
 
@@ -550,12 +568,16 @@ function draw() {
     layer81.display();
 
     layer82.display();
+    layer82.xUpdate();
 
     layer83.display();
+    layer83.xUpdate();
   } else if(scene == 28) {
     layer84.display();
 
     layer85.display();
+    layer85.xUpdate();
+    layer85.yUpdate();
 
     layer86.display();
 
@@ -586,6 +608,7 @@ function draw() {
     layer99.display();
 
     layer100.display();
+    layer100.xUpdate();
 
     layer101.display();
 
@@ -604,18 +627,22 @@ function draw() {
     layer108.display();
 
     layer109.display();
+    layer109.yUpdate();
 
     layer110.display();
+    layer110.xUpdate();
   } else if(scene == 36) {
     layer111.display();
 
     layer112.display();
 
     layer113.display();
+    layer113.yUpdate();
   } else if(scene == 37) {
     layer114.display();
 
     layer115.display();
+    layer115.xUpdate();
 
     layer116.display();
 
@@ -626,10 +653,13 @@ function draw() {
     layer119.display();
 
     layer120.display();
+    layer120.yUpdate();
   } else if(scene == 38) {
     layer121.display();
+    layer121.xUpdate();
   } else if(scene == 39) {
     layer122.display();
+    layer122.yUpdate();
   } else if(scene == 40) {
     layer123.display();
   } else if(scene == 41) {
@@ -654,12 +684,17 @@ function draw() {
     layer133.display();
   } else if(scene == 46) {
     layer134.display();
+    layer134.yUpdate();
   } else if(scene == 47) {
     layer135.display();
+    layer135.xUpdate();
   } else if(scene == 48) {
     layer136.display();
+    layer136.yUpdate();
   } else if(scene >= 49) {
     layer137.display();
+    layer137.xUpdate();
+    layer137.yUpdate();
 
     layer138.display();
   }
@@ -677,8 +712,11 @@ class Layer {
     this.h = this.w*ratio;
     this.img = img;
   }
-  update() {
-    // this.x += 1;
+  xUpdate() {
+    this.x = random(-5, 5);
+  }
+  yUpdate() {
+    this.y = random(-50, 0);
   }
   display() {
     push();
