@@ -658,7 +658,7 @@ function draw() {
     layer135.display();
   } else if(scene == 48) {
     layer136.display();
-  } else if(scene == 48) {
+  } else if(scene >= 49) {
     layer137.display();
 
     layer138.display();
