@@ -4,6 +4,8 @@ let origRatio = imgOriginalHeight/imgOriginalWidth
 
 let scene = 1;
 
+let song1;
+
 function preload() {
   layer1img = loadImage("assets/layer1.png");
 
